@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <h1>makan</h1>
+    <h1>makan ikan</h1>
 </body>
 
 </html>
