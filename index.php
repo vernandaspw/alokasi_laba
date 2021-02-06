@@ -23,7 +23,7 @@ $totalhasil = mysqli_fetch_array(mysqli_query($conn, "SELECT SUM(hasil) FROM hit
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="bg-info">
 
     <div class="container" style="margin-bottom: 400px;">
         <div class="row d-flex justify-content-center mt-5">
