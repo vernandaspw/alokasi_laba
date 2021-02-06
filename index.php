@@ -28,7 +28,7 @@ $totalhasil = mysqli_fetch_array(mysqli_query($conn, "SELECT SUM(hasil) FROM hit
     <div class="container" style="margin-bottom: 400px;">
         <div class="row d-flex justify-content-center mt-5">
             <div class="col-md-9 col-sm-12">
-                <div class="card shadow border-0">
+                <div class="card shadow-lg bg-white rounded border-0">
                     <div class="card-header d-flex justify-content-between">
                         <h4>Kalkulator Alokasi Laba</h4>
                         <a href="index.php" class="btn btn-warning text-white">Refresh</i></a>
