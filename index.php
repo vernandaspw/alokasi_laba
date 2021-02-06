@@ -35,7 +35,6 @@ $totalhasil = mysqli_fetch_array(mysqli_query($conn, "SELECT SUM(hasil) FROM hit
                     </div>
                     <div class="card-body">
                         <?php
-                    
                     if(!empty($_GET['s'])){
                         if($_GET['s'] == "1"){
                     ?>
