@@ -7,19 +7,19 @@ function kali($a,$b){
     return $a*$b;
 };
 
+
+$laba = $_GET['nom_laba'];
 $id = $_GET['id'];
 
-$laba = $_POST['nom_laba'];
+$nama = $_POST['ubah_nama_alokasi'];
+$persen = $_POST['ubah_persen_alokasi'];
 
-$nama = $_POST['nama'];
-$persen = $_POST['persen'];
 $hasilpersen = persen($persen);
 $hasil = kali($laba,$hasilpersen);
 
-$sql = mysqli_query($conn, "UPDATE hitung SET laba='$laba', nama_alokasi='$nama', persen='$persen', hasil='$hasil' WHERE id='$id' ");
-$cek = mysqli_num_rows($sql);
+$sql = mysqli_query($conn, "UPDATE hitung SET nama_alokasi='$nama', persen='$persen', hasil='$hasil' WHERE id='$id' ");
 
-if ($cek>0) {
+if ($sql) {
     $status = "1";
 } else {
     $status = "2";

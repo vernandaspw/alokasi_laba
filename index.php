@@ -25,32 +25,15 @@ $totalhasil = mysqli_fetch_array(mysqli_query($conn, "SELECT SUM(hasil) FROM hit
 
 <body>
 
-    <div class="container">
+    <div class="container" style="margin-bottom: 400px;">
         <div class="row d-flex justify-content-center mt-5">
-            <div class="col-md-7">
+            <div class="col-md-9 col-sm-12">
                 <div class="card shadow border-0">
                     <div class="card-header d-flex justify-content-between">
                         <b>Kalkulator Alokasi Laba</b>
                         <a href="index.php" class="btn btn-warning text-white">Refresh</i></a>
                     </div>
                     <div class="card-body">
-                        <?php
-                    if(!empty($_GET['s'])){
-                        if($_GET['s'] == "1"){
-                    ?>
-                        <div class="alert alert-success">
-                            <strong>Berhasil</strong> data berhasil diedit
-                        </div>
-                        <?php
-                        }else if($_GET['s'] == "2"){
-                    ?>
-                        <div class="alert alert-danger">
-                            <strong>Maaf !</strong> data gagal diedit
-                        </div>
-                        <?php
-                        }
-                    }
-                    ?>
 
                         <?php 
                     if (!empty($_GET['h'])) {
@@ -62,8 +45,7 @@ $totalhasil = mysqli_fetch_array(mysqli_query($conn, "SELECT SUM(hasil) FROM hit
                     }
                     ?>
 
-                        <button type="submit" class="btn btn-primary form-control mt-3 mb-2" name="tambah">Tambah
-                            alokasi</button>
+
                     </div>
                 </div>
             </div>
